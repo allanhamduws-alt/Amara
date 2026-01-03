@@ -88,12 +88,12 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   // Transform the post data for the component
   const transformedPost = {
     ...post,
-    publishedAt: post.publishedAt,
+    publishedAt: post.publishedAt || new Date(),
   };
 
   const transformedRelatedPosts = relatedPosts.map(p => ({
     ...p,
-    publishedAt: p.publishedAt,
+    publishedAt: p.publishedAt || new Date(),
   }));
 
   return <NewsDetailContent post={transformedPost} relatedPosts={transformedRelatedPosts} />;
