@@ -54,7 +54,8 @@ export async function authenticateWithFormData(
     // Check if request came via HTTPS (check forwarded proto header from reverse proxy)
     const headersList = await headers();
     const forwardedProto = headersList.get("x-forwarded-proto");
-    const isSecure = forwardedProto === "https" || process.env.NODE_ENV === "production";
+    // Only set secure cookie if actually using HTTPS
+    const isSecure = forwardedProto === "https";
 
     // Set cookie
     const cookieStore = await cookies();
@@ -66,7 +67,7 @@ export async function authenticateWithFormData(
       path: "/",
     });
 
-    console.log("[Action] Login successful for:", user.email, "secure:", isSecure);
+    console.log("[Action] Login successful for:", user.email, "secure:", isSecure, "proto:", forwardedProto);
     return { success: true };
   } catch (error) {
     console.log("[Action] Error:", error);
