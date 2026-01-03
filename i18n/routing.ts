@@ -19,6 +19,10 @@ export const routing = defineRouting({
       de: "/aktuelles",
       en: "/news",
     },
+    "/aktuelles/[slug]": {
+      de: "/aktuelles/[slug]",
+      en: "/news/[slug]",
+    },
     "/kontakt": {
       de: "/kontakt",
       en: "/contact",

@@ -85,7 +85,7 @@ export default function NewsContent() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                 >
-                  <Link href={`/aktuelles/${post.slug}`} className="block h-full">
+                  <Link href={{ pathname: "/aktuelles/[slug]", params: { slug: post.slug } }} className="block h-full">
                     <Card className="h-full hover:shadow-xl transition-all duration-300 overflow-hidden group hover:-translate-y-1">
                       <div className="h-2 bg-gradient-to-r from-primary to-secondary" />
                       <CardHeader>

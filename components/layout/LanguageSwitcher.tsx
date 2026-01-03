@@ -25,7 +25,8 @@ export default function LanguageSwitcher() {
   const currentLanguage = languages.find((lang) => lang.code === locale);
 
   const handleLanguageChange = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale as "de" | "en" });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    router.replace(pathname as any, { locale: newLocale as "de" | "en" });
   };
 
   return (

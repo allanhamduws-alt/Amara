@@ -479,7 +479,7 @@ interface NewsDetailContentProps {
 // Simple markdown-like parser for basic formatting
 function renderContent(content: string) {
   const lines = content.split('\n');
-  const elements: JSX.Element[] = [];
+  const elements: React.ReactElement[] = [];
   let listItems: string[] = [];
   let listType: 'ul' | 'ol' | null = null;
   let key = 0;
@@ -705,7 +705,7 @@ export default function NewsDetailContent({ post, relatedPosts }: NewsDetailCont
                   <h3 className="text-lg font-serif text-foreground mb-4">Weitere Beiträge</h3>
                   <div className="space-y-4">
                     {relatedPosts.map((relatedPost) => (
-                      <Link key={relatedPost.id} href={`/aktuelles/${relatedPost.slug}`}>
+                      <Link key={relatedPost.id} href={{ pathname: "/aktuelles/[slug]", params: { slug: relatedPost.slug } }}>
                         <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
                           <CardContent className="p-4">
                             <div className="flex items-center gap-2 text-muted-foreground text-xs mb-2">
