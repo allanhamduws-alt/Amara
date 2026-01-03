@@ -23,6 +23,9 @@ RUN npx prisma generate
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
 
+# Compile seed script to JavaScript for production
+RUN npx tsx --compile scripts/seed.ts -o scripts/seed.js 2>/dev/null || npx esbuild scripts/seed.ts --bundle --platform=node --outfile=scripts/seed.js --external:@prisma/client
+
 # Production image, copy all the files and run next
 FROM base AS runner
 WORKDIR /app
@@ -48,6 +51,10 @@ COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
 COPY --from=builder /app/node_modules/@prisma ./node_modules/@prisma
 
+# Copy compiled seed script and start script
+COPY --from=builder --chown=nextjs:nodejs /app/scripts/seed.js ./scripts/seed.js
+COPY --from=builder --chown=nextjs:nodejs /app/scripts/start.sh ./scripts/start.sh
+
 USER nextjs
 
 EXPOSE 3000
@@ -55,5 +62,6 @@ EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
-CMD ["node", "server.js"]
+# Use start script that runs migrations and seeding before starting the app
+CMD ["sh", "scripts/start.sh"]
 
