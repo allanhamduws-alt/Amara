@@ -24,8 +24,8 @@ export default function AdminLoginPage() {
       if (!result.success) {
         setError(result.error || "Ungültige Anmeldedaten");
       } else {
-        router.push("/admin/dashboard");
-        router.refresh();
+        // Force a hard navigation to ensure cookies are properly sent
+        window.location.href = "/admin/dashboard";
       }
     });
   };

@@ -2,7 +2,7 @@
 
 import { compare } from "bcryptjs";
 import prisma from "@/lib/prisma";
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { SignJWT } from "jose";
 
 const secret = new TextEncoder().encode(
@@ -51,17 +51,22 @@ export async function authenticateWithFormData(
       .setExpirationTime("7d")
       .sign(secret);
 
+    // Check if request came via HTTPS (check forwarded proto header from reverse proxy)
+    const headersList = await headers();
+    const forwardedProto = headersList.get("x-forwarded-proto");
+    const isSecure = forwardedProto === "https" || process.env.NODE_ENV === "production";
+
     // Set cookie
     const cookieStore = await cookies();
     cookieStore.set("admin-session", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
+      secure: isSecure,
       sameSite: "lax",
       maxAge: 60 * 60 * 24 * 7, // 7 days
       path: "/",
     });
 
-    console.log("[Action] Login successful for:", user.email);
+    console.log("[Action] Login successful for:", user.email, "secure:", isSecure);
     return { success: true };
   } catch (error) {
     console.log("[Action] Error:", error);
