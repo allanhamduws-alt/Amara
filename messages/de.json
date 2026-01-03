@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "title": "Praxis Amara | Internistische Hausarztpraxis Eidelstedt",
+    "description": "Ihre internistische Hausarztpraxis in Hamburg-Eidelstedt. Facharzt für Innere Medizin mit umfassender Diagnostik und persönlicher Betreuung."
+  },
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "team": "Team",
+    "about": "Über uns",
+    "news": "Aktuelles",
+    "contact": "Kontakt",
+    "appointment": "Termin buchen",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "home": {
+    "hero": {
+      "welcome": "Herzlich Willkommen",
+      "title": "Internistische Hausarztpraxis Eidelstedt",
+      "subtitle": "Hausärztlich versorgt, internistisch betreut",
+      "description": "Seit April 2023 bieten wir Ihnen in unseren Praxisräumen am Eidelstedter Platz eine umfassende hausärztliche Versorgung mit internistischer Diagnostik auf Facharztniveau.",
+      "cta": "Termin vereinbaren",
+      "callUs": "Rufen Sie uns an"
+    },
+    "services": {
+      "title": "Unsere Leistungen",
+      "subtitle": "Umfassende medizinische Versorgung für die ganze Familie",
+      "viewAll": "Alle Leistungen ansehen"
+    },
+    "team": {
+      "title": "Unser Team",
+      "subtitle": "Persönliche Betreuung durch erfahrene Spezialisten",
+      "viewAll": "Team kennenlernen"
+    },
+    "hours": {
+      "title": "Sprechzeiten",
+      "subtitle": "Wir sind für Sie da",
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "closed": "Geschlossen",
+      "emergency": "Notfallsprechstunde",
+      "emergencyTime": "Mo-Fr 12:00 - 13:00 Uhr"
+    },
+    "cta": {
+      "title": "Werden Sie Patient bei uns",
+      "description": "Wir freuen uns darauf, Sie in unserer Praxis begrüßen zu dürfen. Vereinbaren Sie jetzt Ihren Termin.",
+      "button": "Jetzt Termin buchen"
+    }
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "subtitle": "Hausärztliche Betreuung mit umfassender internistischer Diagnostik",
+    "categories": {
+      "diagnostics": "Diagnostik",
+      "prevention": "Vorsorge",
+      "care": "Betreuung"
+    },
+    "items": {
+      "general": {
+        "title": "Hausärztliche Betreuung",
+        "description": "Umfassende medizinische Versorgung für die ganze Familie mit persönlicher Betreuung und Begleitung."
+      },
+      "ecg": {
+        "title": "Ruhe-EKG",
+        "description": "Aufzeichnung der elektrischen Herzaktivität zur Erkennung von Herzrhythmusstörungen und anderen Herzerkrankungen."
+      },
+      "holter": {
+        "title": "Langzeit-EKG",
+        "description": "24-Stunden-EKG-Aufzeichnung inkl. Vorhofflimmeranalyse und Atemapnoe Pre-Analyse für eine umfassende Herzdiagnostik."
+      },
+      "bloodPressure": {
+        "title": "Langzeit-Blutdruckmessung",
+        "description": "24-Stunden-Blutdruckmessung inkl. PWA-Messung zur genauen Beurteilung Ihres Blutdruckverhaltens."
+      },
+      "spirometry": {
+        "title": "Spirometrie",
+        "description": "Lungenfunktionsprüfung zur Diagnose und Verlaufskontrolle von Atemwegserkrankungen wie Asthma oder COPD."
+      },
+      "ultrasound": {
+        "title": "Ultraschall",
+        "description": "Sonographie der Bauchorgane, Brustorgane, Schilddrüse, Halsschlagader, Bauchschlagader und Gefäße (Thrombose, pAVK)."
+      },
+      "lab": {
+        "title": "Labordiagnostik",
+        "description": "Umfangreiche Blut- und Urinuntersuchungen für eine präzise Diagnosestellung."
+      },
+      "preOp": {
+        "title": "Präoperative Diagnostik",
+        "description": "Umfassende Untersuchung und Vorbereitung vor geplanten Operationen."
+      },
+      "checkup": {
+        "title": "Gesundheits-Check",
+        "description": "Regelmäßige Vorsorgeuntersuchungen zur Früherkennung von Erkrankungen."
+      },
+      "cancer": {
+        "title": "Krebsfrüherkennung",
+        "description": "Beratung und Untersuchung zur frühzeitigen Erkennung von Krebserkrankungen."
+      },
+      "dmp": {
+        "title": "DMP-Programme",
+        "description": "Disease-Management-Programme für chronisch erkrankte Patienten (Diabetes, KHK, Asthma, COPD)."
+      },
+      "igel": {
+        "title": "IGeL-Leistungen",
+        "description": "Individuelle Gesundheitsleistungen und private Zusatzleistungen."
+      },
+      "vaccination": {
+        "title": "Impfberatung",
+        "description": "Individuelle Impfberatung und Durchführung aller empfohlenen Schutzimpfungen."
+      },
+      "chronic": {
+        "title": "Chroniker-Betreuung",
+        "description": "Langfristige Begleitung und Behandlung chronisch erkrankter Patienten."
+      },
+      "travel": {
+        "title": "Reisemedizin",
+        "description": "Reisemedizinische Beratung und Impfungen für Ihre Auslandsreisen."
+      }
+    }
+  },
+  "team": {
+    "title": "Unser Team",
+    "subtitle": "Persönliche Betreuung und Begleitung",
+    "doctors": "Ärzteteam",
+    "staff": "Praxisteam",
+    "members": {
+      "jwan": {
+        "name": "Jwan Amara",
+        "role": "Facharzt für Innere Medizin",
+        "subtitle": "Praxisinhaber",
+        "description": "Mit langjähriger Erfahrung in Klinik und Praxis biete ich Ihnen eine umfassende internistische Diagnostik und hausärztliche Versorgung. Seit April 2023 führe ich die Praxis am Eidelstedter Platz."
+      },
+      "khakan": {
+        "name": "Khakan Amara",
+        "role": "Ärztin für Allgemeinmedizin",
+        "subtitle": "Angestellte Ärztin",
+        "description": "Als Ärztin für Allgemeinmedizin unterstütze ich das Praxisteam bei der hausärztlichen Versorgung und Betreuung unserer Patienten."
+      },
+      "brugmann": {
+        "name": "Fr. Brügmann",
+        "role": "Medizinische Fachangestellte",
+        "subtitle": "Praxismanagerin",
+        "description": "Mit über 10 Jahren Erfahrung im Gesundheitswesen sorge ich für einen reibungslosen Praxisablauf. Ich kümmere mich um Ihre Terminvereinbarungen, koordiniere Überweisungen und bin Ihre erste Ansprechpartnerin bei organisatorischen Fragen. Ihr Wohlbefinden liegt mir am Herzen."
+      },
+      "dziachan": {
+        "name": "Fr. Dziachan",
+        "role": "Medizinische Fachangestellte",
+        "subtitle": "Medizinische Assistenz",
+        "description": "Als medizinische Fachangestellte unterstütze ich das Ärzteteam bei allen diagnostischen Maßnahmen. Von der Blutentnahme über EKG-Durchführung bis zur Patientenbetreuung – ich bin für Sie da und sorge dafür, dass Sie sich in unserer Praxis gut aufgehoben fühlen."
+      }
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Ihre internistische Hausarztpraxis in Hamburg-Eidelstedt",
+    "motto": {
+      "title": "Unser Motto",
+      "text": "Hausärztlich versorgt, internistisch betreut."
+    },
+    "philosophy": {
+      "title": "Unsere Philosophie",
+      "text": "Unser Ziel ist es, Ihnen neben der hausärztlichen Betreuung eine internistische Diagnostik und Therapie auf Facharztniveau anzubieten. Dabei ist es uns wichtig, Sie menschlich und auch medizinisch individuell zu betreuen. Wir stehen Ihnen mit hoher fachlicher Kompetenz durch langjährige Erfahrung in Klinik und Praxis zur Verfügung."
+    },
+    "history": {
+      "title": "Unsere Geschichte",
+      "text": "Seit April 2023 führt Jwan Amara, Facharzt für Innere Medizin, die internistische Hausarztpraxis in den Praxisräumen am Eidelstedter Platz 6a. Mit einem engagierten Team bieten wir unseren Patienten eine umfassende medizinische Versorgung."
+    },
+    "practice": {
+      "title": "Unsere Praxis",
+      "text": "Unsere modern ausgestatteten Praxisräume befinden sich zentral am Eidelstedter Platz und sind mit öffentlichen Verkehrsmitteln sehr gut erreichbar. Wir verfügen über moderne diagnostische Geräte für eine umfassende internistische Untersuchung."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "items": {
+        "trust": {
+          "title": "Vertrauen",
+          "text": "Eine vertrauensvolle Arzt-Patienten-Beziehung ist die Grundlage unserer Arbeit."
+        },
+        "competence": {
+          "title": "Kompetenz",
+          "text": "Fachliche Expertise durch kontinuierliche Fortbildung und langjährige Erfahrung."
+        },
+        "care": {
+          "title": "Fürsorge",
+          "text": "Persönliche Betreuung und individuelle Behandlung jedes Patienten."
+        },
+        "modern": {
+          "title": "Modernität",
+          "text": "Moderne Diagnostik und zeitgemäße Behandlungsmethoden."
+        }
+      }
+    }
+  },
+  "news": {
+    "title": "Aktuelles",
+    "subtitle": "Neuigkeiten aus unserer Praxis",
+    "readMore": "Weiterlesen",
+    "backToNews": "Zurück zur Übersicht",
+    "noNews": "Aktuell gibt es keine Neuigkeiten.",
+    "publishedAt": "Veröffentlicht am"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir freuen uns auf Ihre Nachricht",
+    "info": {
+      "title": "Kontaktdaten",
+      "address": "Adresse",
+      "phone": "Telefon",
+      "fax": "Fax",
+      "email": "E-Mail"
+    },
+    "hours": {
+      "title": "Öffnungszeiten",
+      "phone": "Telefonische Erreichbarkeit"
+    },
+    "directions": {
+      "title": "Anfahrt",
+      "subtitle": "So finden Sie uns",
+      "bus": "Bus (Haltestelle: Eidelstedter Platz)",
+      "busLines": "Linien 4, 21, 115, 181, 183, 184, 281, 284, 384, 392",
+      "sbahn": "S-Bahn (Haltestelle: Elbgaustraße)",
+      "sbahnLines": "Linien S3, S21",
+      "akn": "AKN (Haltestelle: Eidelstedt Zentrum)",
+      "aknLines": "Linie A1"
+    },
+    "form": {
+      "title": "Nachricht senden",
+      "name": "Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre.email@beispiel.de",
+      "phone": "Telefon (optional)",
+      "phonePlaceholder": "Ihre Telefonnummer",
+      "message": "Nachricht",
+      "messagePlaceholder": "Wie können wir Ihnen helfen?",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "Vielen Dank für Ihre Nachricht! Wir werden uns schnellstmöglich bei Ihnen melden.",
+      "error": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+  },
+  "appointment": {
+    "title": "Online-Terminbuchung",
+    "subtitle": "Buchen Sie Ihren Termin bequem online",
+    "steps": {
+      "date": "Datum wählen",
+      "time": "Uhrzeit wählen",
+      "details": "Ihre Daten",
+      "confirm": "Bestätigung"
+    },
+    "calendar": {
+      "selectDate": "Wählen Sie ein Datum",
+      "noSlots": "Keine freien Termine an diesem Tag",
+      "availableSlots": "Verfügbare Termine"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre.email@beispiel.de",
+      "phone": "Telefon",
+      "phonePlaceholder": "Ihre Telefonnummer",
+      "reason": "Anliegen (optional)",
+      "reasonPlaceholder": "Beschreiben Sie kurz Ihr Anliegen",
+      "submit": "Termin buchen",
+      "submitting": "Wird gebucht..."
+    },
+    "confirmation": {
+      "title": "Termin erfolgreich gebucht",
+      "message": "Vielen Dank für Ihre Buchung! Sie erhalten in Kürze eine Bestätigung per E-Mail.",
+      "details": "Termindetails",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "backHome": "Zurück zur Startseite"
+    },
+    "cancel": {
+      "title": "Termin stornieren",
+      "message": "Möchten Sie Ihren Termin wirklich stornieren?",
+      "confirm": "Ja, stornieren",
+      "success": "Ihr Termin wurde erfolgreich storniert.",
+      "error": "Der Termin konnte nicht storniert werden."
+    },
+    "error": {
+      "slotTaken": "Dieser Termin ist leider nicht mehr verfügbar.",
+      "general": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+  },
+  "footer": {
+    "practice": "Internistische Hausarztpraxis Eidelstedt",
+    "rights": "Alle Rechte vorbehalten",
+    "developedBy": "Webdesign & Entwicklung"
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "back": "Zurück",
+    "next": "Weiter",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "close": "Schließen",
+    "search": "Suchen",
+    "language": "Sprache",
+    "german": "Deutsch",
+    "english": "English"
+  }
+}
+

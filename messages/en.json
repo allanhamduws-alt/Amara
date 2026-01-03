@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "title": "Praxis Amara | Internal Medicine Practice Eidelstedt",
+    "description": "Your internal medicine practice in Hamburg-Eidelstedt. Specialist in internal medicine with comprehensive diagnostics and personal care."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "team": "Team",
+    "about": "About Us",
+    "news": "News",
+    "contact": "Contact",
+    "appointment": "Book Appointment",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy"
+  },
+  "home": {
+    "hero": {
+      "welcome": "Welcome",
+      "title": "Internal Medicine Practice Eidelstedt",
+      "subtitle": "General practice care with internal medicine expertise",
+      "description": "Since April 2023, we offer comprehensive general practice care with internal medicine diagnostics at specialist level in our practice rooms at Eidelstedter Platz.",
+      "cta": "Book Appointment",
+      "callUs": "Call Us"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive medical care for the whole family",
+      "viewAll": "View All Services"
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Personal care from experienced specialists",
+      "viewAll": "Meet the Team"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "subtitle": "We are here for you",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "closed": "Closed",
+      "emergency": "Emergency Consultation",
+      "emergencyTime": "Mon-Fri 12:00 - 13:00"
+    },
+    "cta": {
+      "title": "Become Our Patient",
+      "description": "We look forward to welcoming you to our practice. Book your appointment now.",
+      "button": "Book Appointment Now"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "General practice care with comprehensive internal medicine diagnostics",
+    "categories": {
+      "diagnostics": "Diagnostics",
+      "prevention": "Prevention",
+      "care": "Care"
+    },
+    "items": {
+      "general": {
+        "title": "General Practice Care",
+        "description": "Comprehensive medical care for the whole family with personal attention and support."
+      },
+      "ecg": {
+        "title": "Resting ECG",
+        "description": "Recording of electrical heart activity to detect cardiac arrhythmias and other heart conditions."
+      },
+      "holter": {
+        "title": "Holter Monitor",
+        "description": "24-hour ECG recording including atrial fibrillation analysis and sleep apnea pre-analysis for comprehensive cardiac diagnostics."
+      },
+      "bloodPressure": {
+        "title": "24-Hour Blood Pressure",
+        "description": "24-hour blood pressure monitoring including PWA measurement for accurate assessment of your blood pressure behavior."
+      },
+      "spirometry": {
+        "title": "Spirometry",
+        "description": "Lung function testing for diagnosis and monitoring of respiratory conditions such as asthma or COPD."
+      },
+      "ultrasound": {
+        "title": "Ultrasound",
+        "description": "Sonography of abdominal organs, chest organs, thyroid, carotid arteries, abdominal aorta, and vessels (thrombosis, PAD)."
+      },
+      "lab": {
+        "title": "Laboratory Diagnostics",
+        "description": "Comprehensive blood and urine tests for precise diagnosis."
+      },
+      "preOp": {
+        "title": "Preoperative Diagnostics",
+        "description": "Comprehensive examination and preparation before planned surgeries."
+      },
+      "checkup": {
+        "title": "Health Check-up",
+        "description": "Regular preventive examinations for early detection of diseases."
+      },
+      "cancer": {
+        "title": "Cancer Screening",
+        "description": "Consultation and examination for early detection of cancer."
+      },
+      "dmp": {
+        "title": "DMP Programs",
+        "description": "Disease management programs for chronically ill patients (diabetes, CHD, asthma, COPD)."
+      },
+      "igel": {
+        "title": "Private Services",
+        "description": "Individual health services and private additional services."
+      },
+      "vaccination": {
+        "title": "Vaccination Advice",
+        "description": "Individual vaccination advice and administration of all recommended vaccinations."
+      },
+      "chronic": {
+        "title": "Chronic Care",
+        "description": "Long-term support and treatment of chronically ill patients."
+      },
+      "travel": {
+        "title": "Travel Medicine",
+        "description": "Travel medicine consultation and vaccinations for your trips abroad."
+      }
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Personal care and support",
+    "doctors": "Medical Team",
+    "staff": "Practice Team",
+    "members": {
+      "jwan": {
+        "name": "Jwan Amara",
+        "role": "Specialist in Internal Medicine",
+        "subtitle": "Practice Owner",
+        "description": "With many years of experience in hospitals and private practice, I offer comprehensive internal medicine diagnostics and general practice care. Since April 2023, I have been running the practice at Eidelstedter Platz."
+      },
+      "khakan": {
+        "name": "Khakan Amara",
+        "role": "General Practitioner",
+        "subtitle": "Employed Physician",
+        "description": "As a general practitioner, I support the practice team in providing general medical care and patient support."
+      },
+      "brugmann": {
+        "name": "Ms. Brügmann",
+        "role": "Medical Assistant",
+        "subtitle": "Practice Manager",
+        "description": "As practice manager, I coordinate practice operations and am your first point of contact for all organizational matters."
+      },
+      "dziachan": {
+        "name": "Ms. Dziachan",
+        "role": "Medical Assistant",
+        "subtitle": "",
+        "description": "I support the practice team in patient care and medical assistance."
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your internal medicine practice in Hamburg-Eidelstedt",
+    "motto": {
+      "title": "Our Motto",
+      "text": "General practice care with internal medicine expertise."
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "text": "Our goal is to offer you internal medicine diagnostics and therapy at specialist level in addition to general practice care. It is important to us to provide you with individual care, both personally and medically. We are at your service with high professional competence through many years of experience in hospitals and private practice."
+    },
+    "history": {
+      "title": "Our History",
+      "text": "Since April 2023, Jwan Amara, specialist in internal medicine, has been running the internal medicine practice in the practice rooms at Eidelstedter Platz 6a. With a dedicated team, we offer our patients comprehensive medical care."
+    },
+    "practice": {
+      "title": "Our Practice",
+      "text": "Our modern practice rooms are centrally located at Eidelstedter Platz and are easily accessible by public transport. We have modern diagnostic equipment for comprehensive internal medicine examinations."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": {
+        "trust": {
+          "title": "Trust",
+          "text": "A trusting doctor-patient relationship is the foundation of our work."
+        },
+        "competence": {
+          "title": "Competence",
+          "text": "Professional expertise through continuous training and many years of experience."
+        },
+        "care": {
+          "title": "Care",
+          "text": "Personal attention and individual treatment for every patient."
+        },
+        "modern": {
+          "title": "Modernity",
+          "text": "Modern diagnostics and contemporary treatment methods."
+        }
+      }
+    }
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Updates from our practice",
+    "readMore": "Read More",
+    "backToNews": "Back to Overview",
+    "noNews": "There is currently no news.",
+    "publishedAt": "Published on"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We look forward to hearing from you",
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "phone": "Phone",
+      "fax": "Fax",
+      "email": "Email"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "phone": "Phone Availability"
+    },
+    "directions": {
+      "title": "Directions",
+      "subtitle": "How to find us",
+      "bus": "Bus (Stop: Eidelstedter Platz)",
+      "busLines": "Lines 4, 21, 115, 181, 183, 184, 281, 284, 384, 392",
+      "sbahn": "S-Bahn (Stop: Elbgaustraße)",
+      "sbahnLines": "Lines S3, S21",
+      "akn": "AKN (Stop: Eidelstedt Zentrum)",
+      "aknLines": "Line A1"
+    },
+    "form": {
+      "title": "Send Message",
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "Your phone number",
+      "message": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you for your message! We will get back to you as soon as possible.",
+      "error": "An error occurred. Please try again later."
+    }
+  },
+  "appointment": {
+    "title": "Online Booking",
+    "subtitle": "Book your appointment conveniently online",
+    "steps": {
+      "date": "Select Date",
+      "time": "Select Time",
+      "details": "Your Details",
+      "confirm": "Confirmation"
+    },
+    "calendar": {
+      "selectDate": "Select a date",
+      "noSlots": "No available appointments on this day",
+      "availableSlots": "Available Appointments"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "Your phone number",
+      "reason": "Reason (optional)",
+      "reasonPlaceholder": "Briefly describe your concern",
+      "submit": "Book Appointment",
+      "submitting": "Booking..."
+    },
+    "confirmation": {
+      "title": "Appointment Successfully Booked",
+      "message": "Thank you for your booking! You will receive a confirmation email shortly.",
+      "details": "Appointment Details",
+      "date": "Date",
+      "time": "Time",
+      "backHome": "Back to Home"
+    },
+    "cancel": {
+      "title": "Cancel Appointment",
+      "message": "Are you sure you want to cancel your appointment?",
+      "confirm": "Yes, Cancel",
+      "success": "Your appointment has been successfully cancelled.",
+      "error": "The appointment could not be cancelled."
+    },
+    "error": {
+      "slotTaken": "Unfortunately, this appointment is no longer available.",
+      "general": "An error occurred. Please try again later."
+    }
+  },
+  "footer": {
+    "practice": "Internal Medicine Practice Eidelstedt",
+    "rights": "All rights reserved",
+    "developedBy": "Web Design & Development"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "next": "Next",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "search": "Search",
+    "language": "Language",
+    "german": "Deutsch",
+    "english": "English"
+  }
+}
+
