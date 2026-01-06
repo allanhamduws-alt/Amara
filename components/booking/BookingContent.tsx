@@ -58,7 +58,7 @@ export default function BookingContent() {
   const handleDateSelect = async (date: Date | undefined) => {
     if (date) {
       setBookingData({ ...bookingData, date, timeSlot: null });
-      
+
       // Fetch booked slots for this date
       try {
         const response = await fetch(`/api/appointments/slots?date=${format(date, "yyyy-MM-dd")}`);
@@ -69,7 +69,7 @@ export default function BookingContent() {
       } catch {
         setBookedSlots([]);
       }
-      
+
       setStep("time");
     }
   };
@@ -89,7 +89,7 @@ export default function BookingContent() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...bookingData,
-          date: bookingData.date?.toISOString(),
+          date: bookingData.date ? format(bookingData.date, "yyyy-MM-dd") : null,
           language: locale,
         }),
       });
@@ -143,11 +143,10 @@ export default function BookingContent() {
                   {steps.slice(0, -1).map((s, index) => (
                     <div key={s} className="flex items-center">
                       <div
-                        className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium transition-colors ${
-                          index <= currentStepIndex
+                        className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium transition-colors ${index <= currentStepIndex
                             ? "bg-primary text-white"
                             : "bg-muted text-muted-foreground"
-                        }`}
+                          }`}
                       >
                         {index < currentStepIndex ? (
                           <Check className="h-5 w-5" />
@@ -157,9 +156,8 @@ export default function BookingContent() {
                       </div>
                       {index < steps.length - 2 && (
                         <div
-                          className={`w-16 sm:w-24 h-1 mx-2 rounded transition-colors ${
-                            index < currentStepIndex ? "bg-primary" : "bg-muted"
-                          }`}
+                          className={`w-16 sm:w-24 h-1 mx-2 rounded transition-colors ${index < currentStepIndex ? "bg-primary" : "bg-muted"
+                            }`}
                         />
                       )}
                     </div>

@@ -94,29 +94,31 @@ export function generateTimeSlots(dayOfWeek: number): string[] {
 export function getAvailableDates(): Date[] {
   const dates: Date[] = [];
   const today = startOfDay(new Date());
-  
+
   for (let i = 1; i <= MAX_BOOKING_DAYS; i++) {
     const date = addDays(today, i);
     const dayOfWeek = date.getDay();
-    
+
     // Skip weekends
     if (dayOfWeek === 0 || dayOfWeek === 6) continue;
-    
+
     // Check if the day has opening hours
     if (OPENING_HOURS[dayOfWeek as keyof typeof OPENING_HOURS]) {
       dates.push(date);
     }
   }
-  
+
   return dates;
 }
 
 export function isSlotInPast(date: Date, timeSlot: string): boolean {
   const [hours, minutes] = timeSlot.split(":").map(Number);
-  const slotDate = setMinutes(setHours(date, hours), minutes);
+  // Ensure we're working from the start of day to avoid timezone issues
+  const dayStart = startOfDay(date);
+  const slotDate = setMinutes(setHours(dayStart, hours), minutes);
   const now = new Date();
   const minBookingTime = new Date(now.getTime() + MIN_BOOKING_HOURS * 60 * 60 * 1000);
-  
+
   return slotDate < minBookingTime;
 }
 
@@ -128,13 +130,13 @@ export function isValidBookingDate(date: Date): boolean {
   const today = startOfDay(new Date());
   const maxDate = addDays(today, MAX_BOOKING_DAYS);
   const dayOfWeek = date.getDay();
-  
+
   // Check if it's a weekday
   if (dayOfWeek === 0 || dayOfWeek === 6) return false;
-  
+
   // Check if it's within the booking window
   if (date <= today || date > maxDate) return false;
-  
+
   // Check if the day has opening hours
   return !!OPENING_HOURS[dayOfWeek as keyof typeof OPENING_HOURS];
 }
