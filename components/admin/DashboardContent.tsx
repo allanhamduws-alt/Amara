@@ -47,6 +47,7 @@ import { de } from "date-fns/locale";
 import CreateAppointmentDialog from "./CreateAppointmentDialog";
 import BlockSlotsDialog from "./BlockSlotsDialog";
 import NewsEditor from "./NewsEditor";
+import PendingAppointmentsList from "./PendingAppointmentsList";
 
 interface Appointment {
   id: string;
@@ -96,16 +97,19 @@ export default function DashboardContent() {
   const [appointments, setAppointments] = useState<Appointment[]>([]);
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  
+
   // News state
   const [newsPosts, setNewsPosts] = useState<NewsPost[]>([]);
   const [isNewsLoading, setIsNewsLoading] = useState(false);
   const [editingPost, setEditingPost] = useState<NewsPost | null>(null);
   const [isEditorOpen, setIsEditorOpen] = useState(false);
-  
+
   // Messages state
   const [messages, setMessages] = useState<ContactMessage[]>([]);
   const [isMessagesLoading, setIsMessagesLoading] = useState(false);
+
+  // Pending appointments slide-over state
+  const [pendingListOpen, setPendingListOpen] = useState(false);
 
   const handleLogout = async () => {
     await logout();
@@ -208,7 +212,7 @@ export default function DashboardContent() {
 
   const deleteNewsPost = async (id: string) => {
     if (!confirm("Möchten Sie diesen Beitrag wirklich löschen?")) return;
-    
+
     try {
       const response = await fetch(`/api/admin/news/${id}`, {
         method: "DELETE",
@@ -243,7 +247,7 @@ export default function DashboardContent() {
 
   const deleteMessage = async (id: string) => {
     if (!confirm("Möchten Sie diese Nachricht wirklich löschen?")) return;
-    
+
     try {
       const response = await fetch(`/api/admin/messages?id=${id}`, {
         method: "DELETE",
@@ -315,7 +319,10 @@ export default function DashboardContent() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card
+            className="cursor-pointer hover:border-primary/50 hover:bg-accent/50 transition-colors"
+            onClick={() => setPendingListOpen(true)}
+          >
             <CardHeader className="pb-2">
               <CardDescription>Ausstehend</CardDescription>
               <CardTitle className="text-3xl">{stats?.pendingAppointments || 0}</CardTitle>
@@ -412,11 +419,11 @@ export default function DashboardContent() {
                       </CardDescription>
                     </div>
                     <div className="flex gap-2">
-                      <CreateAppointmentDialog 
+                      <CreateAppointmentDialog
                         onSuccess={() => {
                           fetchAppointments(selectedDate);
                           fetchStats();
-                        }} 
+                        }}
                       />
                       <BlockSlotsDialog onSuccess={() => fetchAppointments(selectedDate)} />
                       <Button
@@ -578,15 +585,15 @@ export default function DashboardContent() {
                           </TableCell>
                           <TableCell className="text-right">
                             <div className="flex justify-end gap-2">
-                              <Button 
-                                variant="outline" 
+                              <Button
+                                variant="outline"
                                 size="icon"
                                 onClick={() => { setEditingPost(post); setIsEditorOpen(true); }}
                               >
                                 <Edit className="h-4 w-4" />
                               </Button>
-                              <Button 
-                                variant="outline" 
+                              <Button
+                                variant="outline"
                                 size="icon"
                                 onClick={() => deleteNewsPost(post.id)}
                               >
@@ -605,7 +612,7 @@ export default function DashboardContent() {
                 )}
               </CardContent>
             </Card>
-            
+
             <NewsEditor
               post={editingPost}
               open={isEditorOpen}
@@ -625,7 +632,7 @@ export default function DashboardContent() {
                       Kontaktanfragen
                     </CardTitle>
                     <CardDescription>
-                      {unreadCount > 0 
+                      {unreadCount > 0
                         ? `${unreadCount} ungelesene Nachricht${unreadCount > 1 ? 'en' : ''}`
                         : 'Alle Nachrichten gelesen'}
                     </CardDescription>
@@ -643,8 +650,8 @@ export default function DashboardContent() {
                 ) : messages.length > 0 ? (
                   <div className="space-y-4">
                     {messages.map((message) => (
-                      <Card 
-                        key={message.id} 
+                      <Card
+                        key={message.id}
                         className={`${!message.read ? 'border-primary bg-primary/5' : ''}`}
                       >
                         <CardHeader className="pb-2">
@@ -709,6 +716,16 @@ export default function DashboardContent() {
           </TabsContent>
         </Tabs>
       </main>
+
+      {/* Pending Appointments Slide-Over */}
+      <PendingAppointmentsList
+        open={pendingListOpen}
+        onClose={() => setPendingListOpen(false)}
+        onUpdate={() => {
+          fetchStats();
+          fetchAppointments(selectedDate);
+        }}
+      />
     </div>
   );
 }

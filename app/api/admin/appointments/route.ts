@@ -13,9 +13,10 @@ export async function GET(request: NextRequest) {
 
   const { searchParams } = new URL(request.url);
   const dateParam = searchParams.get("date");
+  const statusParam = searchParams.get("status");
 
   try {
-    let whereClause = {};
+    let whereClause: Record<string, unknown> = {};
 
     if (dateParam) {
       const date = parseISO(dateParam);
@@ -25,6 +26,15 @@ export async function GET(request: NextRequest) {
           lte: endOfDay(date),
         },
       };
+    }
+
+    // Filter by status (e.g., ?status=PENDING for pending appointments)
+    if (statusParam) {
+      whereClause.status = statusParam;
+      // For pending appointments, only show future appointments
+      if (statusParam === "PENDING") {
+        whereClause.date = { gte: startOfDay(new Date()) };
+      }
     }
 
     const appointments = await prisma.appointment.findMany({
